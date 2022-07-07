@@ -19,7 +19,7 @@ class TCPClient:
 
             # サーバーと接続する
             print("=== サーバーと接続します ===")
-            client_socket.connect(("127.0.0.1", 80))
+            client_socket.connect(("127.0.0.1", 80)) # connect()は自動的にクライアント側(このプログラム)にもポートを割り当ててくれている(random)
             print("=== サーバーとの接続が完了しました ===")
 
             # サーバーに送信するリクエストを、ファイルから取得する
@@ -27,7 +27,7 @@ class TCPClient:
                 request = f.read()
 
             # サーバーへリクエストを送信する
-            client_socket.send(request)
+            client_socket.send(request) # bytes型にして渡さないといけない
 
             # サーバーからレスポンスが送られてくるのを待ち、取得する
             response = client_socket.recv(4096)
