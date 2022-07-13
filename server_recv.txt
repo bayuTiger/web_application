@@ -1,14 +1,15 @@
-GET /index.html HTTP/1.1
+GET /favicon.ico HTTP/1.1
 Host: localhost:8080
 Connection: keep-alive
-Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
 Sec-GPC: 1
-Sec-Fetch-Site: none
-Sec-Fetch-Mode: navigate
-Sec-Fetch-User: ?1
-Sec-Fetch-Dest: document
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/index.html
 Accept-Encoding: gzip, deflate, br
 Accept-Language: ja,en-US;q=0.9,en;q=0.8
 Cookie: PHPSESSID=vekjm5mr84liuak72v7thkrofq; XSRF-TOKEN=eyJpdiI6InkzK1VmMzI1T2ZIVzlVaUdMeDZXaEE9PSIsInZhbHVlIjoiZU9iK04wVWRIK2V0U3JUNkNpVE52RlZnSk93ZWNKaUtTblNoWFpwR1pMR285ejloZXZiN3loWDhMZUtuK1poVWVqWTlEZDRRc2dQK29ic05ER2N0N2d5a2RmanRHUDNnajhuUFFHaUMvbHJic3Vvd1VZWnBkK3lTNkZNcldTK1EiLCJtYWMiOiJhNTljNzBiMDEwYzJmMzEyZjYxMGQ3YWVmMzk1YjQ0ZjE5NDNhYTI3ZmQ2MTk0MmFlMjc0YjYyZDAwZjM4NzYxIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IjVCcDIzRGZtcWNEU0pNZzNESXdyVlE9PSIsInZhbHVlIjoiSVRkbElOOTRFWkV4RXB3NERBb3JCK0NNeWE5TEMvRnVwdkZaWFRIcUkzK1ArcDg2ZnA3bXpEVlN6aVlMRHhWZFlOblBKeHRsMTY0c3JsaDNQeWRwVVU3d1pBbmdpeUpUcnQvNks0dnhNbnpaN3J5d0VLZ1NJRDlFREprVTBoVUsiLCJtYWMiOiJhZjM4NmU0ODQyZmY4YTA1NWM2MmVjNGYyOTNlZGMyOTQ3MzY0NTExYWQwZmFmZWU0N2Q1OTBkNWRiNDA3NzgwIiwidGFnIjoiIn0%3D
